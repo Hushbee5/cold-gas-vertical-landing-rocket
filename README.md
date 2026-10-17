@@ -36,9 +36,7 @@ The work was presented at the **77th International Astronautical Congress (IAC 2
 
 ![GNC architecture](docs/6dof_flight_simulation_architecture.png)
 
-| HIL landing from 8 m | Monte Carlo touchdown dispersion |
-|---|---|
-| ![](poster/graphics/G3_HIL_descent.png) | ![](figures/paper/monte_carlo_landing_dispersion.png) |
+![HIL landing from 8 m](poster/graphics/G3_HIL_descent.png)
 
 | Control loop (PID + dynamic inversion) | Nozzle exit temperature |
 |---|---|
