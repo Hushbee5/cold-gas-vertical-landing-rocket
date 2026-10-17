@@ -244,8 +244,6 @@ and a 0.1–30 Hz chirp gave matching responses for the continuous and discrete 
 
 Nominal and disturbed (15° initial tilt plus a 6 m/s lateral gust) soft-landing and ascent-and-hover scenarios were simulated from 8–10 m. The nominal landing touches down at 0.1–0.2 m/s, and in both hover cases the vehicle reaches and holds 5 m.
 
-A 50-run Monte Carlo campaign with ±5° to ±10° initial perturbations from 10 m put **48 of 50 touchdowns inside the 5 m × 5 m target area** (mean radial error 0.80 m, 95 % containment radius 1.55 m). **Every run stayed within the 1.5 m/s landing-gear limit** (mean 0.67 m/s).
-
 ---
 
 ## 8. Hardware-in-the-loop testing

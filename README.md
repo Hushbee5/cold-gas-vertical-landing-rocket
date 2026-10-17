@@ -30,7 +30,6 @@ The work was presented at the **77th International Astronautical Congress (IAC 2
 - **Real-gas propulsion design.** The Peng–Robinson blowdown model and a 1-D nozzle design checked against 3-D CFD (agreement within 0.4 %) give an estimated total impulse of ≈ 1371 N·s and show that stored impulse, not thrust, sizes the mission.
 - **6-DOF flight simulation.** Built in Simulink and Simscape Multibody, with variable gas mass, atmosphere, gust and per-leg ground contact.
 - **Nonlinear dynamic inversion attitude control.** Uses live thrust, inertia and moment arm, so the loop gain adapts through the burn; gain margins of 8.9–11.4 dB and phase margins of 46.5–58.2°.
-- **Monte Carlo.** 48 of 50 simulated releases from 10 m touch down inside the 5 m × 5 m target area, all within the landing-gear limit.
 - **Hardware-in-the-loop.** The real flight computer, TVC servos and valve drive ran in a 50 Hz lock-step loop with the simulated vehicle. The campaign caught five integration issues before flight and established a 120 ms latency bound (measured 20–27 ms). The 25 s hover held thrust within 0.1 % of equilibrium.
 - **Ground tests.** 180 bar held for one hour, five successful nozzle firings and two structural drop tests passed; field drop tests and the competition flight produced onboard flight data.
 
