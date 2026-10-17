@@ -1,0 +1,22 @@
+{
+ "baslangic_m": 1.999,
+ "hedef_m": 5.0,
+ "tolerans_giris_s": 20.38,
+ "tamamlanma_s": 25.42,
+ "tutma_suresi_s": 5.04,
+ "tamamlanma_z": 4.956,
+ "tamamlanma_vz": -0.095,
+ "izleme_hatasi_ort": -0.0021,
+ "hover_itkisi_N": 331.3,
+ "itki_sifir_ornek": 0,
+ "itki_doygun_ornek": 1,
+ "hover_ornek": 1266,
+ "yatis_max": 0.006,
+ "kayip": 53,
+ "toplam": 1372,
+ "kayip_pct": 3.86,
+ "lag_ort": 0.0273,
+ "lag_max": 0.03,
+ "dusus_temas_v": 0.0,
+ "kosu_s": 27.42
+}

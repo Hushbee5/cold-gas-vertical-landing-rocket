@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+veri/
+*.asv
+*.slxc
+slprj/
+.DS_Store
+Thumbs.db

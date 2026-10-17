@@ -1,0 +1,22 @@
+{
+ "birakma_m": 7.9979,
+ "serbest_dusus_s": 0.78,
+ "hiz_5m": -7.85,
+ "motor_t": 0.82,
+ "motor_z": 4.54,
+ "tepki_s": 0.04,
+ "tepki_ornek": 2,
+ "itki_max": 599.5,
+ "vana_max": 49.5,
+ "inis_hiz_max": -8.15,
+ "ivme_max": 21.35,
+ "motorlu_inis_s": 1.42,
+ "temas_t": 2.24,
+ "temas_v": -0.668,
+ "kayip": 1,
+ "toplam": 165,
+ "kayip_pct": 0.61,
+ "lag_ort": 0.0197,
+ "lag_max": 0.03,
+ "yatis_max": 0.0
+}
