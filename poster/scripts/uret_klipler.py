@@ -99,12 +99,6 @@ KLIPLER = {
         (141, 10, "Same software on the vehicle avionics", "Servos and valve drive in the loop", 1.0),
         (183, 7, "50 Hz lock-step with the simulated plant", "5 defects found that simulation could not show", 1.0),
     ]),
-    "07_avionics_board": (HIL, geom_dikey("crop=588:1080:662:0"), [
-        (14, 9, "BORTE-I avionics board", "ESP32-S3, IMU, barometer, LiDAR, servo and valve drivers", 1.0),
-    ]),
-    "03_leak_timelapse": (r"D:\sizdirmazlik\sizdirmazlik_test_1_20x_sayacli.mp4", geom_yatay(), [
-        (0, 174.9, "Leak test: 180 bar held for one hour", "Pressure loss below 5 % in all five runs  (time-lapse)", 11.66),
-    ]),
     "04_soap_check": (r"D:\murat itki ahr\köpük sürmeli sızdırmazlık testi murat 2 dakika 50 saniye.mp4", geom_dikey(), [
         (21, 11, "Soap-film check of every fitting", None, 1.0),
     ]),

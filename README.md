@@ -16,7 +16,7 @@ The work was presented at the **77th International Astronautical Congress (IAC 2
 - **6-DOF flight simulation.** Built in Simulink and Simscape Multibody, with variable gas mass, atmosphere, gust and per-leg ground contact.
 - **Nonlinear dynamic inversion attitude control.** Uses live thrust, inertia and moment arm, so the loop gain adapts through the burn; gain margins of 8.9–11.4 dB and phase margins of 46.5–58.2°.
 - **Hardware-in-the-loop.** The real flight computer, TVC servos and valve drive ran in a 50 Hz lock-step loop with the simulated vehicle. The campaign caught five integration issues before flight and established a 120 ms latency bound (measured 20–27 ms). The 25 s hover held thrust within 0.1 % of equilibrium.
-- **Ground tests.** 180 bar held for one hour, five successful nozzle firings and two structural drop tests passed; field drop tests and the competition flight produced onboard flight data.
+- **Ground tests.** Five successful nozzle firings and two structural drop tests passed; field drop tests and the competition flight produced onboard flight data.
 
 **Contents**
 
@@ -46,22 +46,18 @@ The work was presented at the **77th International Astronautical Congress (IAC 2
 | Inertia I<sub>xx</sub>, I<sub>yy</sub>, I<sub>zz</sub> | 1.913, 1.995, 0.845 kg m² |
 | Structure | Open truss of eight carbon-fibre tubes between octagonal carbon-fibre bulkheads |
 | Landing gear | Four articulated legs with pneumatic dampers and compliant feet |
-| Avionics | BORTE-I board: ESP32-S3, BNO055 IMU, BMP390 barometer, TFmini Plus LiDAR, microSD, ESP-NOW telemetry |
+| Avionics | ESP32-S3, BNO055 IMU, BMP390 barometer, TFmini Plus LiDAR, microSD, ESP-NOW telemetry |
 | Hardware cost | ≈ USD 3,700 (structure 49 %, propulsion 25 %, avionics 26 %) |
 
-The open truss gives direct access to the pneumatic hardware between flights, and the 9 L tank sits on the longitudinal axis to keep lateral inertia low. Static FEA of the bulkheads, tubes and leg struts under 500 N and 800 N load cases gives peak von Mises stresses of 150–160 MPa, a margin of at least 1.5 on the lower-bound composite strengths.
+The open truss gives direct access to the internal hardware between flights, and the 9 L tank sits on the longitudinal axis to keep lateral inertia low. Static FEA of the bulkheads, tubes and leg struts under 500 N and 800 N load cases gives peak von Mises stresses of 150–160 MPa, a margin of at least 1.5 on the lower-bound composite strengths.
 
-| Exploded view | BORTE-I avionics board |
-|---|---|
-| ![Exploded view](figures/hardware/15_patlatilmis.png) | ![BORTE-I](figures/hardware/BORTE_I_as_built_ESP_NOW.png) |
+![Exploded view](figures/hardware/15_patlatilmis.png)
 
 ---
 
 ## 2. Cold-gas propulsion
 
-![Pneumatic circuit](figures/paper/03_pnomatik_devre.png)
-
-Dry air at 300 bar flows from a 9 L tank through a quarter-turn motorised ball valve and a stepper-driven needle valve (NEMA 34 with planetary reducer, closed-loop encoder drive) to a single convergent-divergent nozzle on a two-axis gimbal.
+Dry air stored at 300 bar in a 9 L tank feeds a single convergent-divergent nozzle on a two-axis gimbal.
 
 ### Nozzle design
 
@@ -287,7 +283,6 @@ The real flight computer, both TVC servos and the valve drive ran in lock-step w
 
 ## 9. Ground and field tests
 
-- **Leak test.** The assembled pneumatic system held 180 bar for one hour with less than 5 % pressure loss in all five repetitions.
 - **Nozzle firing.** Five single-nozzle firings at about 152 bar all established flow and thrust.
 - **Structural drop test.** Two drops from 0.4 m, one as a bare chassis and one fully integrated, showed no cracking, distortion or loosening.
 - **Field campaign.** A tethered drop from 9.9 m and the untethered competition flight produced onboard flight logs ([data/flight](data/flight)). Their analysis defines the next development steps: faster altitude estimation during a fast descent, an end-to-end thrust-onset test, load-cell thrust measurement and a staged powered-flight campaign.
@@ -346,7 +341,7 @@ figures/
   simulation_model/ Simulink/Simscape subsystems of the flight simulation
   simulink_models/ Diagrams exported from the Simulink models
   simulink/        Simulation result plots and Simulink screenshots
-  hardware/        Vehicle photos, avionics board and CAD renders
+  hardware/        Vehicle photos and CAD renders
 poster/            iPoster graphics, short test clips and the scripts that made them
 docs/              Architecture diagram
 ```
